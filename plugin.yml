@@ -1,0 +1,18 @@
+hubber_plugin:
+  entry: plugin.js
+  descriptor:
+    name: Watch Dog
+    icon: assets/test.png
+    author: n1b0r 3l1x3r
+    version: 0.1
+    description:
+      - Monitoring and Problem prevention for unix based servers
+      - CPU, RAM, Network, Storagen, Servics... etc.
+    webPath: /watch
+  update:
+    git: https://github.com/RobinRS/watch_server.git
+    settings:
+      auto: true
+      interval: daily
+  dependencies:
+    chokidar: latest
